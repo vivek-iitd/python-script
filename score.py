@@ -1,5 +1,5 @@
 #Author : Vivek Kumar
-#Email : kumarvivek7204@gmail.com
+#Email : kumarvivek7204[at]gmail[dot]com
 
 #References : 
 #1)http://home.iitk.ac.in/~saiwal/python/send-sms-way2sms-python/
