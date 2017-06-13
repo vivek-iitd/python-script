@@ -7,7 +7,7 @@
 
 
 #Script to automatically fetch cricket score every 2 minutes from cricbuzz and send it as a message to any number using way2sms
-#Takes url of match from cricbuzz as input
+#change url of match from cricbuzz in line 51
 import mechanize
 import csv
 import re
@@ -47,8 +47,8 @@ def job():
 	browser = mechanize.Browser()
 	browser.set_handle_robots(False)
 	browser.addheaders = [('user-agent', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0'), ('accept','text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8')]
-	
-	response = browser.open("http://www.cricbuzz.com/live-cricket-scores/16711/sl-vs-pak-12th-match-group-b-icc-champions-trophy-2017")
+	#paste url of live match from cricbuzz here	
+	response = browser.open("url")
 	#response contains entire html of webpage in an object form
 	soup = bs(response.read(),"lxml")
 	#soup converts it to html form 
